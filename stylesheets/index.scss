@@ -10,31 +10,88 @@ $text-color: white;
 body {
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 header {
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        position: absolute;
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
         z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ffecec;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
 
         a {
-            color: $text-color;
+            padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 25px;
+            color: #052839;
+            display: block;
+            transition: 0.3s;
+            font-family: CoreBandi;
+            position: relative;
         }
 
-        img {
-            width: 150px;
-            height: 150px;
-            object-fit: contain;
+        .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+    }
+
+    .bx-menu {
+        font-size: 45px;
+        color: #052839;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    @media (min-width: 870px) {
+        .sidenav {
+            display: none !important;
+
+            .bx-menu {
+                display: none !important;
+            }
+        }
+
+        .desktop-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+
+            a {
+                color: $text-color;
+                text-decoration: none;
+                font-size: 18px;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+        }
+
+        span[onclick="openNav()"] {
+            display: none;
         }
     }
 }
+
 
 .head {
     img {
@@ -91,71 +148,158 @@ h2 {
 }
 
 
-
-
-
-.carousel {
+.swiper-container {
+    width: 100%;
+    padding: 50px 0;
     overflow: hidden;
+    position: relative;
+}
+
+.swiper-slide {
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
+    overflow: hidden;
 }
 
-.carousel-items:nth-child(1),
-.carousel-items:nth-child(3) {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-
-}
-
-.carousel-items:nth-child(2) {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
-    width: max-content;
-}
-
-.carousel-item {
-    flex: 0 0 250px;
-    list-style-type: none;
-    margin-right: 1rem;
-    scroll-snap-align: start;
-    background-color: $primary-color;
-    border-radius: 1rem;
+.flip-card {
+    background-color: transparent;
+    width: 70%;
+    margin: 0 auto;
+    height: 250px;
+    perspective: 1000px;
+    overflow: hidden;
 
 
-    img {
+    &-inner {
+        position: relative;
         width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 1rem 1rem 0 0;
+        height: 200px;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
 
-    h3 {
-        padding: 1rem;
-        color: $text-color;
-        font-size: 0.9rem;
-        margin-top: 10px;
+    &.flipped &-inner {
+        transform: rotateY(180deg);
     }
 
-    a {
-        color: $text-color;
-        text-decoration: none;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &-front,
+    &-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+
+    &-front {
+        background-color: #fff;
+        color: black;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-back {
+        background-color: $primary-color;
+        color: white;
+        transform: rotateY(180deg);
+        padding: 20px;
+        box-sizing: border-box;
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #2980b9;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+
+    @media (min-width: 870px) {
+        .flip-card {
+            width: 70%;
+            height: 100%;
+
+            &-inner {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
     }
 }
 
-// .card:hover {
-//     transform: translateY(-10px);
-// }
+.swiper-pagination {
+    position: relative;
+    margin-top: 2vw;
+}
 
-::-webkit-scrollbar {
-    display: none;
+@media (max-width: 870px) {
+    .swiper-pagination {
+        bottom: 600px;
+    }
+}
+
+
+
+// PAGE DE RECETTE 
+
+.horizontal-scroll-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #ccc;
+    border: 1px solid #999;
+}
+
+
+// En dessous 
+
+.recipes {
+    padding-top: 5vh;
+}
+
+.recipes-line {
+    // border: 2px blue solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 870px) {
+    .recipes-line {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+
+        .flip-card {
+            width: 300px;
+            height: 350px;
+        }
+    }
+
 }
