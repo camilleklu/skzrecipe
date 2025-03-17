@@ -38,7 +38,7 @@ elements.forEach((element) => {
     {
       opacity: 1,
       x: 0,
-      duration: 1,
+      duration: 3,
       ease: "power2.out",
       scrollTrigger: {
         trigger: element,
@@ -62,7 +62,7 @@ elem.forEach((element) => {
     {
       opacity: 1,
       x: 0,
-      duration: 1,
+      duration: 3,
       ease: "power2.out",
       scrollTrigger: {
         trigger: element,
