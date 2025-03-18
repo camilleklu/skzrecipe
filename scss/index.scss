@@ -7,7 +7,7 @@ $text-color: white;
 $myFont: 'Arbutus Slab';
 $mySizeTitle: 3rem;
 $mySizeMidTitle: 2rem;
-$shadow: 5px 5px 12px 0px rgba(0,0,0,0.5);
+$shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.5);
 
 * {
     margin: 0;
@@ -172,12 +172,12 @@ header {
                 background: $text-color;
                 transition: width 500ms ease;
 
-              }
-               
-              a:hover:after {
+            }
+
+            a:hover:after {
                 width: 100%;
                 border-radius: 999px;
-              }
+            }
         }
 
 
@@ -229,7 +229,7 @@ header {
     display: none;
 }
 
-@media (min-width: 870px) {
+@media (min-width: 1600px) {
     .skzoo {
         display: block;
         position: absolute;
