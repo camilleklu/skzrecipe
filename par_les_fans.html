@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" type="image/x-icon"
         href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54">
     <title>Stray Kids's Recipe</title>
@@ -28,7 +28,7 @@
                 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54"
                     alt="logo du site" />
             </a>
-            <a href="par_les_fans.html">Recettes par les fans</a>
+            <a href="par_les_fans.html">Par les fans</a>
             <a href="contact.html">Contact</a>
         </div>
 
@@ -36,9 +36,9 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Accueil</a>
             <a href="skz.html">Par Stray Kids</a>
-            <a href="han.html">Ne pas reproduire</a>
-            <a href="bangchan.html">Recettes par les fans</a>
-            <a href="felix.html">Contact</a>
+            <a href="a_ne_pas_repro.html">Ne pas reproduire</a>
+            <a href="par_les_fans.html">Recettes par les fans</a>
+            <a href="contact.html">Contact</a>
         </div>
         <span onclick="openNav()"><i class='bx bx-menu'></i></span>
 
@@ -52,19 +52,122 @@
     <div class="container">
         <div class="horizontal-scroll-section">
             <div class="horizontal-scroll-container">
-                <div class="slide" id="slide1">Slide 1</div>
-                <div class="slide" id="slide2">Slide 2</div>
-                <div class="slide" id="slide3">Slide 3</div>
-                <div class="slide" id="slide4">Slide 4</div>
-            </div>
-        </div>
-
-        <div class="recipes">
-
+                <div class="slide" id="slide1">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                </div>
+                <div class="slide" id="slide2">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                </div>
+                <div class="slide" id="slide3">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                </div>
+                <div class="slide" id="slide4">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                </div>
         </div>
     </div>
 
+    <div class="recipes">
+        <h2>Recettes par Straykids</h2>
+        <div class="recipes-line">
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="text_flip_card">Boeuf Wellington</p>
+                        <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                        <div class="text_dessus"></div>
+                        <h3>Recette de Leeknow</h3>
+                        <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                        <a href="#" class="button">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="text_flip_card">Boeuf Wellington</p>
+                        <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                        <div class="text_dessus"></div>
+                        <h3>Recette de Leeknow</h3>
+                        <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                        <a href="#" class="button">Lire plus</a>
+                    </div>
+                </div>
+        </div>
+        <div class="flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="text_flip_card">Boeuf Wellington</p>
+                    <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                </div>
+                <div class="flip-card-back">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                    <div class="text_dessus"></div>
+                    <h3>Recette de Leeknow</h3>
+                    <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                    <a href="#" class="button">Lire plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="recipes-line">
+        <div class="flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="text_flip_card">Boeuf Wellington</p>
+                    <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                </div>
+                <div class="flip-card-back">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                    <div class="text_dessus"></div>
+                    <h3>Recette de Leeknow</h3>
+                    <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                    <a href="#" class="button">Lire plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="text_flip_card">Boeuf Wellington</p>
+                    <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                </div>
+                <div class="flip-card-back">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                    <div class="text_dessus"></div>
+                    <h3>Recette de Leeknow</h3>
+                    <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                    <a href="#" class="button">Lire plus</a>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card" onclick="flipCard(this)">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="text_flip_card">Boeuf Wellington</p>
+                    <img src="./images/boeuf_leeknow.png" alt="Milkshake">
+                </div>
+                <div class="flip-card-back">
+                    <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                    <div class="text_dessus"></div>
+                    <h3>Recette de Leeknow</h3>
+                    <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                    <a href="#" class="button">Lire plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
     <footer>
+        <hr class="separation">
         <div class="footer-contact">
             <div class="social-media">
                 <a href=""><i class="bx bxl-instagram"></i>Instagram</a>
@@ -82,6 +185,7 @@
     </footer>
     <script src="./js/navigation.js"></script>
     <script src="./js/une.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
