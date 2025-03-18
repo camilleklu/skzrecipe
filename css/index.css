@@ -553,7 +553,7 @@ h3 {
 @media (min-width: 870px) {
   .recipe-title {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
