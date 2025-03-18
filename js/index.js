@@ -73,3 +73,35 @@ elem.forEach((element) => {
     }
   );
 });
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Sélectionner toutes les images
+  const icons = document.querySelectorAll(".skzoo img");
+
+  icons.forEach((icon, index) => {
+    let direction = index % 2 === 0 ? 1 : -1; // Alterne gauche/droite
+    let startY = index * 300; // Espacement vertical initial plus grand
+    let delay = index * 0.2; // Décalage temporel
+    let slalomWidth = gsap.utils.random(300, 500); // Largeur du slalom augmentée
+    let travelY = gsap.utils.random(1000, 1500); // Distance verticale augmentée
+
+    // Position initiale des images
+    gsap.set(icon, { y: startY });
+
+    // Animation de déplacement en slalom
+    gsap.to(icon, {
+      x: direction * slalomWidth, // Variation de l'amplitude du slalom
+      y: `+=${travelY}`, // Variation de la distance verticale
+      rotation: direction * gsap.utils.random(10, 20), // Rotation aléatoire
+      ease: "power1.inOut",
+      delay: delay, // Décalage entre chaque animation
+      scrollTrigger: {
+        trigger: icon,
+        start: "top 80%", // Ajustez ce point de départ pour une meilleure visibilité
+        end: "bottom -20%",
+        scrub: true,
+      },
+    });
+  });
+});
