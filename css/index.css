@@ -465,9 +465,52 @@ h2 {
   }
 }
 .recipe {
-  padding-top: 28vh;
+  padding-top: 30vh;
   width: 90%;
   margin: auto;
+}
+
+.recipe-time {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.recipe-time div {
+  padding: 1vw;
+  text-align: center;
+}
+.recipe-time div h5 {
+  font-size: 1.2rem;
+  margin-bottom: 1vw;
+}
+.recipe-time div p {
+  font-size: 1.2rem;
+}
+
+.recipe-intro-contenue {
+  width: 50%;
+  padding: auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  padding: 1vw;
+  margin: 4vw 0vw;
+}
+fieldset legend {
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  background-color: white;
+  margin-top: -2.3vw;
+  margin-left: 2vw;
+  padding: 0.5vw;
 }
 
 .recipe-title {
@@ -475,75 +518,42 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.recipe-title img {
-  width: 100%;
+
+img {
+  width: 45%;
   height: auto;
-  object-fit: cover;
-  margin-bottom: 3vh;
+  margin: auto;
+  border-radius: 25px;
 }
-.recipe-title h1 {
+
+h3 {
   text-align: center;
   margin-bottom: 3vh;
-}
-
-.recipe-label {
-  width: 100%;
-  background-color: white;
-  margin: 1rem;
-}
-
-.prep-time {
-  border: black 2px solid;
-  width: 30%;
-  margin: auto;
-  padding: 0.5rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ingredients {
-  border: black 2px solid;
-  width: 90%;
-  margin: auto;
-  padding: 1.5rem;
-  border-radius: 20px;
-}
-
-.instructions {
-  border: black 2px solid;
-  width: 90%;
-  margin: auto;
-  padding: 1.5rem;
-  border-radius: 20px;
+  font-size: 3rem;
+  font-family: "Arbutus Slab";
 }
 
 .recipe-description {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  width: 90%;
+  margin: auto;
+}
+
+.ingredients, .instructions {
+  padding: 1.5vw;
+  font-size: 1.2rem;
+}
+.ingredients li, .instructions li {
+  padding: 0.5rem;
+}
+
+.instructions ul {
+  list-style: decimal;
 }
 
 @media (min-width: 870px) {
   .recipe-title {
     flex-direction: row;
     justify-content: space-between;
-  }
-  .recipe-title .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .recipe-title img {
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
-  .recipe-label {
-    text-align: center;
-  }
-  .prep-time,
-  .ingredients,
-  .instructions {
-    width: 50%;
-    margin: auto;
   }
 }
 
