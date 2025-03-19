@@ -42,11 +42,18 @@
         </div>
         <span onclick="openNav()"><i class='bx bx-menu'></i></span>
 
-
         <div class="head">
+            <div class="head-title">
+                <h1>Stray Kids Recipe</h1>
+                <span class="split-bar"></span>
+                <p>Le regroupement des recettes de StrayKids et de leur repas/ dessert préféré</p>
+
+            </div>
+        </div>
+        <!-- <div class="head">
             <img src="https://k-gen.fr/wp-content/uploads/2021/03/stray-kids-gods-menu.jpg"
                 alt="bannière de l'accueil" />
-        </div>
+        </div> -->
     </header>
 
     <div class="container">
@@ -64,153 +71,162 @@
                 <!-- <div class="slide" id="slide4">
                     <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
                 </div> -->
+            </div>
         </div>
-    </div>
 
-    <div class="recipes">
-        <h2>Recettes par Straykids</h2>
+        <div class="recipes">
+            <h2>Recettes par Straykids</h2>
+            <div class="recipes-line">
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Boeuf Wellington</p>
+                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                            <div class="text_dessus">
+                                <h3>Recette de Leeknow</h3>
+                                <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
+                                <a href="./recettes/recette-1.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Curry coréen</p>
+                            <img src="./images/curry_coreen.jpg" alt="curry coréen">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/curry_coreen.jpg" alt="curry coréen">
+                            <div class="text_dessus">
+                                <h3>Recette de Bangchan</h3>
+                                <p>Des légumes et du porc cuit dans un bon bouillon</p>
+                                <a href="./recettes/recette-2.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Cotelettes d'agneau grillées</p>
+                            <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="Cotelettes d'agneau">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="Cotelettes d'agneau">
+                            <div class="text_dessus">
+                                <h3>Recette de Bangchan</h3>
+                                <p>Des cotelettes d'agneau grillées à la poèle</p>
+                                <a href="./recettes/recette-3.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recipes-line">
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Pieuvre</p>
+                            <img src="./images/octopus.png" alt="pieuvre">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/octopus.png" alt="pieuvre">
+                            <div class="text_dessus">
+                                <h3>Recette de Leeknow</h3>
+                                <p>Une pieuvre cuit dans un bouillon</p>
+                                <a href="./recettes/recette-7.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Brownie</p>
+                            <img src="./images/brownie_felix.jpg" alt="Brownie">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/brownie_felix.jpg" alt="Brownie">
+                            <div class="text_dessus">
+                                <h3>Recette de Félix</h3>
+                                <p>Un gateau au chocolat</p>
+                                <a href="./recettes/recette-8.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p class="text_flip_card">Cheesecake</p>
+                            <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
+                        </div>
+                        <div class="flip-card-back">
+                            <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
+                            <div class="text_dessus">
+                                <h3>Recette de Han</h3>
+                                <p>Un gateau au fromage avec une base au chocolat</p>
+                                <a href="./recettes/recette-9.html" class="button">Voir la recette</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="recipes-line">
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <p class="text_flip_card">Boeuf Wellington</p>
-                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                        <p class="text_flip_card">Purin (Pudding japonnais)</p>
+                        <img src="./images/purin.jpg" alt="Pudding japonnais">
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
-                        <div class="text_dessus"></div>
-                        <h3>Recette de Leeknow</h3>
-                        <p>Un filet de boeuf cuit au four dans une coque de pate feuilletée</p>
-                        <a href="./recettes/recette-1.html" class="button">Voir la recette</a>
+                        <img src="./images/purin.jpg" alt="Pudding japonnais">
+                        <div class="text_dessus">
+                            <h3>Recette de Leeknow</h3>
+                            <p>Un pudding japonnais avec une sauce au caramel</p>
+                            <a href="./recettes/recette-10.html" class="button">Voir la recette</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="flip-card" onclick="flipCard(this)">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <p class="text_flip_card">Curry coréen</p>
-                        <img src="./images/curry_coreen.jpg" alt="curry coréen">
+                        <p class="text_flip_card">Brownie</p>
+                        <img src="./images/brownie_felix.jpg" alt="Brownie">
                     </div>
                     <div class="flip-card-back">
-                        <img src="./images/curry_coreen.jpg" alt="curry coréen">
-                        <div class="text_dessus"></div>
-                        <h3>Recette de Bangchan</h3>
-                        <p>Des légumes et du porc cuit dans un bon bouillon</p>
-                        <a href="./recettes/recette-2.html" class="button">Voir la recette</a>
+                        <img src="./images/brownie_felix.jpg" alt="Brownie">
+                        <div class="text_dessus">
+                            <h3>Recette de Félix</h3>
+                            <p>Un gateau au chocolat</p>
+                            <a href="./recettes/recette-8.html" class="button">Voir la recette</a>
+                        </div>
                     </div>
                 </div>
-        </div>
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Cotelettes d'agneau grillées</p>
-                    <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="Cotelettes d'agneau">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="Cotelettes d'agneau">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Bangchan</h3>
-                    <p>Des cotelettes d'agneau grillées à la poèle</p>
-                    <a href="./recettes/recette-3.html" class="button">Voir la recette</a>
+            </div>
+            <div class="flip-card" onclick="flipCard(this)">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <p class="text_flip_card">Cheesecake</p>
+                        <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
+                        <div class="text_dessus">
+                            <h3>Recette de Han</h3>
+                            <p>Un gateau au fromage avec une base au chocolat</p>
+                            <a href="./recettes/recette-9.html" class="button">Voir la recette</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="recipes-line">
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Pieuvre</p>
-                    <img src="./images/octopus.png" alt="pieuvre">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/octopus.png" alt="pieuvre">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Leeknow</h3>
-                    <p>Une pieuvre cuit dans un bouillon</p>
-                    <a href="./recettes/recette-7.html" class="button">Voir la recette</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Brownie</p>
-                    <img src="./images/brownie_felix.jpg" alt="Brownie">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/brownie_felix.jpg" alt="Brownie">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Félix</h3>
-                    <p>Un gateau au chocolat</p>
-                    <a href="./recettes/recette-8.html" class="button">Voir la recette</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Cheesecake</p>
-                    <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Han</h3>
-                    <p>Un gateau au fromage avec une base au chocolat</p>
-                    <a href="./recettes/recette-9.html" class="button">Voir la recette</a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="recipes-line">
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Purin (Pudding japonnais)</p>
-                    <img src="./images/purin.jpg" alt="Pudding japonnais">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/purin.jpg" alt="Pudding japonnais">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Leeknow</h3>
-                    <p>Un pudding japonnais avec une sauce au caramel</p>
-                    <a href="./recettes/recette-10.html" class="button">Voir la recette</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Brownie</p>
-                    <img src="./images/brownie_felix.jpg" alt="Brownie">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/brownie_felix.jpg" alt="Brownie">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Félix</h3>
-                    <p>Un gateau au chocolat</p>
-                    <a href="./recettes/recette-8.html" class="button">Voir la recette</a>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card" onclick="flipCard(this)">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <p class="text_flip_card">Cheesecake</p>
-                    <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
-                </div>
-                <div class="flip-card-back">
-                    <img src="./images/Cheesecake.jpeg" alt="Cheesecake">
-                    <div class="text_dessus"></div>
-                    <h3>Recette de Han</h3>
-                    <p>Un gateau au fromage avec une base au chocolat</p>
-                    <a href="./recettes/recette-9.html" class="button">Voir la recette</a>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
 

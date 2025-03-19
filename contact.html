@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="icon" type="image/x-icon"
         href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54">
     <title>Stray Kids's Recipe</title>
@@ -48,13 +48,32 @@
 
 
         <div class="head">
-            <img src="https://k-gen.fr/wp-content/uploads/2021/03/stray-kids-gods-menu.jpg"
-                alt="bannière de l'accueil" />
+            <div class="head-title">
+                <h1>Stray Kids Recipe</h1>
+                <span class="split-bar"></span>
+                <p>Comment nous contacter</p>
+
+            </div>
         </div>
     </header>
 
 
     <div class="container">
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom">
+    
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom">
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea>
+    
+            <input type="submit" value="Envoyer" class="butt">
+        </form>
     </div>
 
     <footer>

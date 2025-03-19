@@ -19,16 +19,16 @@ header .sidenav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #ffecec;
+  background-color: white;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
 }
 header .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 3vw 6vw;
   text-decoration: none;
   font-size: 25px;
-  color: #052839;
+  color: #A21110;
   display: block;
   transition: 0.3s;
   position: relative;
@@ -43,7 +43,7 @@ header .sidenav .closebtn {
 }
 header .bx-menu {
   font-size: 45px;
-  color: #052839;
+  color: #A21110;
 }
 header .desktop-nav {
   display: none;
@@ -113,6 +113,45 @@ header .desktop-nav {
 
 .card-home {
   height: 50vh;
+  background-color: #A21110;
+  margin: 3vw;
+  border-radius: 25px;
+}
+@media (max-width: 800px) {
+  .card-home {
+    height: 30vh;
+    text-align: center;
+  }
+  .card-home img {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+  }
+  .card-home .text-card-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .card-home .text-card-home h3 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0vh;
+  }
+  .card-home .text-card-home p {
+    font-size: 0.8rem;
+    color: white;
+    margin: 1vw;
+  }
+  .card-home .text-card-home a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 1vw;
+    position: relative;
+    padding-bottom: 1vh;
+  }
 }
 @media (min-width: 870px) {
   .card-home {
@@ -195,6 +234,16 @@ header .desktop-nav {
   color: white;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .head-title h1 {
+    font-size: 2rem;
+    width: 50%;
+  }
+  .head-title-title {
+    justify-content: space-between;
+    height: 50vh;
+  }
+}
 .head-title span {
   border-left: 4px solid white;
   height: 50vh;
@@ -204,6 +253,7 @@ header .desktop-nav {
   width: 25%;
   font-size: 1.5rem;
   color: white;
+  text-align: center;
 }
 
 .skzoo {
@@ -215,7 +265,7 @@ header .desktop-nav {
     display: block;
     position: absolute;
     width: 100%;
-    min-height: 315vh;
+    min-height: 280vh;
     overflow: hidden;
     z-index: -1;
   }
@@ -232,6 +282,16 @@ header .desktop-nav {
   position: relative;
 }
 
+@media (max-width: 800px) {
+  footer .footer-contact {
+    width: 90%;
+  }
+}
+@media (min-width: 1600px) {
+  footer .footer-contact {
+    width: 60%;
+  }
+}
 footer {
   margin-top: 12vh;
   background: #A21110;
@@ -251,7 +311,6 @@ footer .separation {
   border-radius: 999px;
 }
 footer .footer-contact {
-  width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -367,41 +426,43 @@ h2 {
   border-radius: 25px;
   top: 0;
   display: flex;
+  flex-direction: column;
   padding: 2vw;
+  justify-content: space-between;
+  /* push the button to the bottom */
+  align-items: center;
+  /* center items horizontally */
+  box-sizing: border-box;
 }
-.flip-card-back h3 {
-  position: absolute;
-  top: 0;
-  margin: 4vw 0vw;
+.flip-card-back .text_dessus h3 {
+  margin: 4vw 0;
   width: 100%;
   z-index: 2;
   font-size: 2rem;
   font-family: "Arbutus Slab";
   text-align: center;
 }
-.flip-card-back p {
-  position: absolute;
-  top: 0;
+.flip-card-back .text_dessus p {
   z-index: 2;
-  margin-top: 6vw;
+  margin: 0 3vw;
   text-align: center;
   width: 80%;
-  margin: 10vw 3vw 0vw 3vw;
   font-size: 1.2rem;
 }
-.flip-card-back .button {
-  top: 0;
+.flip-card-back .text_dessus .button {
   background-color: #fff;
   color: white;
   color: #A21110;
   text-decoration: none;
   border-radius: 25px;
-  z-index: 2;
+  text-align: center;
   padding: 0.5vw 1vw;
-  position: absolute;
-  font-size: 1.2rem;
-  margin-left: -16vw;
-  margin-top: 20vw;
+  height: 3vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw 0vw;
 }
 @media (min-width: 870px) {
   .flip-card .flip-card {
@@ -468,12 +529,34 @@ h2 {
     height: 550px;
   }
 }
-.recipe {
-  padding-top: 30vh;
-  width: 90%;
-  margin: auto;
+@media (max-width: 870px) {
+  .recipe {
+    padding-top: 4vh;
+    width: 90%;
+    margin: auto;
+  }
+  fieldset legend {
+    margin-top: -5vw;
+  }
+  .recipe-intro-contenue {
+    width: 100%;
+    margin: 1vw;
+  }
+  .recipe-title img {
+    width: 100%;
+  }
+  .recipe-title {
+    width: 100%;
+    margin: auto;
+  }
+  .recipe-title .recipe-time {
+    width: 100%;
+  }
+  .instructions li,
+  .ingredients li {
+    margin: 3vw;
+  }
 }
-
 .recipe-time {
   display: flex;
   flex-direction: row;
@@ -493,11 +576,6 @@ h2 {
   font-size: 1.2rem;
 }
 
-.recipe-intro-contenue {
-  width: 50%;
-  padding: auto;
-}
-
 fieldset {
   display: flex;
   flex-direction: column;
@@ -512,18 +590,8 @@ fieldset legend {
   font-weight: bold;
   position: absolute;
   background-color: white;
-  margin-top: -2.3vw;
   margin-left: 2vw;
   padding: 0.5vw;
-}
-
-.recipe-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.recipe-title img {
-  width: 35%;
 }
 
 img {
@@ -545,11 +613,13 @@ h3 {
   margin: auto;
 }
 
-.ingredients, .instructions {
+.ingredients,
+.instructions {
   padding: 1.5vw;
   font-size: 1.2rem;
 }
-.ingredients li, .instructions li {
+.ingredients li,
+.instructions li {
   padding: 0.5rem;
 }
 
@@ -562,9 +632,67 @@ h3 {
 }
 
 @media (min-width: 870px) {
+  .recipe {
+    padding-top: 30vh;
+    width: 90%;
+    margin: auto;
+  }
+  .recipe-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .recipe-title img {
+    width: 35%;
+  }
+  .recipe-intro-contenue {
+    width: 50%;
+    padding: auto;
+  }
   .recipe-title {
     flex-direction: row;
     justify-content: space-around;
+  }
+  legend {
+    margin-top: -2.3vw;
+  }
+  form {
+    padding-top: 5vw;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+input {
+  padding: 1vw;
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.5rem;
+  margin: 1vw;
+  color: #A21110;
+}
+
+.butt {
+  background-color: #A21110;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 1vw;
+  font-size: 1rem;
+  padding: 1vw 2vw;
+}
+
+@media (max-width: 870px) {
+  form {
+    padding-top: 15vw;
   }
 }
 
