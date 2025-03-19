@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54">
+    <title>Stray Kids's Recipe</title>
+</head>
+
+<body>
+    <header>
+        <div id="desktopNav" class="desktop-nav fond_recette">
+            <a href="../skz.html" class="recette">Par Stray Kids</a>
+            <a href="../a_ne_pas_repro.html" class="recette">Ne pas reproduire</a>
+            <a href="../index.html">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54"
+                    alt="logo du site" />
+            </a>
+            <a href="../par_les_fans.html" class="recette">Recettes par les fans</a>
+            <a href="../contact.html" class="recette">Contact</a>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html">Accueil</a>
+            <a href="../skz.html">Par Stray Kids</a>
+            <a href="../a_ne_pas_repro.html">Ne pas reproduire</a>
+            <a href="../par_les_fans.html">Recettes par les fans</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+        <span onclick="openNav()"><i class='bx bx-menu'></i></span>
+
+    </header>
+
+    <!-- <div style="width: 100%; height: 155px;"></div>
+    <!-- quand on enleve le head (avec l'image je suis pas sur mais tous
+    arrive en dessous de la barre nav car elle est en position relative donc j'ai ajouté ça tu peux la retirer pour le
+    css) -->
+
+    <div class="container recipe">
+
+        <div class="recipe-title">
+            <img src="../images/boeuf_leeknow.png" alt="boeuf Wellington">
+            <div class="recipe-intro-contenue">
+                <h3>Boeuf Wellington</h3>
+                <fieldset class="content">
+                    <legend class="recipe-label">Temps</legend>
+                    <div class="recipe-time">
+                        <div>
+                            <h5>Temps de préparation</h5>
+                            <p>1 heure</p>
+                        </div>
+                        <div>
+                            <h5>Temps de cuisson</h5>
+                            <p>45 minutes</p>
+                        </div>
+                        <div>
+                            <h5>Temps total</h5>
+                            <p>1 heure 45 minutes</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="recipe-description">
+            <fieldset>
+                <legend class="recipe-label">Ingrédients</legend>
+                <div class="ingredients">
+                    <ul>
+                        <li>Filet de bœuf (environ 1 kg)</li>
+                        <li>Champignons de Paris (250 g)</li>
+                        <li>Jambon cru (12 tranches)</li>
+                        <li>Pâte feuilletée (500 g)</li>
+                        <li>Jaunes d'œufs (2)</li>
+                        <li>Beurre (50 g)</li>
+                        <li>Vin blanc sec (100 ml)</li>
+                        <li>Thym frais (1 botte)</li>
+                        <li>Huile d'olive</li>
+                        <li>Poivre</li>
+                        <li>Farine</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="recipe-label">Instructions</legend>
+                <div class="instructions">
+                    <h4 class="compartiment">Préparation du boeuf  :</h4>
+                    <ul>
+                        <li>Préchauffer le four à 220°C (thermostat 7)</li>
+                        <li>Huiler et poivrer le filet de bœuf, puis rôtir au four pendant 15-20 minutes selon la cuisson désirée (saignant ou à point)</li>
+                        <li>Laisser refroidir et réfrigérer 20 minutes</li>
+                    </ul>
+
+                    <h4 class="compartiment">Préparation de la duxelles de champignons :</h4>
+                    <ul>
+                        <li>Hacher finement les champignons</li>
+                        <li>Faire revenir les champignons avec de l'huile, du beurre et du thym pendant 10 minutes</li>
+                        <li>Assaisonner, ajouter le vin blanc et cuire jusqu'à absorption complète</li>
+                        <li>Laisser refroidir et retirer le thym</li>
+                    </ul>
+                    <h4 class="compartiment">Montage du Wellington :</h4>
+                    <ul>
+                        <li>Étaler du film plastique sur une planche</li>
+                        <li>Disposer les tranches de jambon en les chevauchant</li>
+                        <li>Étaler la moitié de la préparation aux champignons sur le jambon</li>
+                        <li>Poser le filet de bœuf dessus et recouvrir avec le reste de champignons</li>
+                        <li>Enrouler le jambon autour du filet avec le film plastique, former un rouleau et serrer les extrémités</li>
+                        <li>Réfrigérer pendant la préparation de la pâte</li>
+                        <li>Fariner le plan de travail</li>
+                        <li>Étaler un tiers de la pâte en rectangle et le reste en plus grand rectangle</li>
+                        <li>Poser le filet sur le petit rectangle</li>
+                        <li>Battre les jaunes d'œufs avec de l'eau</li>
+                        <li>Badigeonner les bords de la pâte et le filet</li>
+                        <li>Recouvrir le filet avec le grand rectangle de pâte, presser les bords</li>
+                        <li>Couper l'excédent de pâte, sceller les bords avec une fourchette</li>
+                        <li>Badigeonner de jaune d'œuf, marquer la surface avec un couteau sans couper la pâte</li>
+                        <li>Réfrigérer au moins 30 minutes</li>
+                    </ul>
+                    <h4 class="compariment">Cuisson</h4>
+                    <ul>
+                        <li>Préchauffer le four à 200°C (thermostat 6)</li>
+                        <li>Badigeonner à nouveau de jaune d'œuf et cuire 20-30 minutes jusqu'à ce que la pâte soit dorée</li>
+                        <li>Laisser reposer 10 minutes avant de trancher et servir</li>
+                    </ul>
+                    <h4 class="compartiment">Servir avec des légumes de saison ou pomme de terre</h4>
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+
+    <footer>
+        <hr class="separation">
+        <div class="footer-contact">
+            <div class="social-media">
+                <a href=""><i class="bx bxl-instagram"></i>Instagram</a>
+                <a href=""><i class="bx bxl-pinterest"></i>Pinterest</a>
+                <a href=""><i class="bx bxl-pinterest"></i>Pinterest</a>
+            </div>
+            <div class="phone">
+                <p><i class="bx bx-phone"></i> +33 0 00 00 00 00</p>
+                <a href="mailto:info@straykids.com">skz@repice.com</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; Camille Kluck et Célestine Mahieux. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/une.js"></script>
+</body>
+
+</html>
