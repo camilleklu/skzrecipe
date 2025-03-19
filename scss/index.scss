@@ -259,7 +259,6 @@ header {
 
 .head {
 
-    // background-image: linear-gradient(to right top, #051937 33%, #331b4b, #8c0037, #a21110);
     background-image: radial-gradient(circle at center center, #a21110 5%, rgb(8, 8, 8));
     width: 100%;
     height: 100vh;
@@ -479,14 +478,20 @@ h2 {
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
 
         .text_flip_card {
             position: absolute;
-            color: $text-color;
-            font-size: 1.8rem;
+            color: white;
+            font-size: 1.9rem;
             bottom: 0;
-            margin: 2vw;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 0% 0% 25px 25px;
+            width: 100%;
+            text-align: start;
+            padding: 1rem;
+
         }
     }
 
@@ -507,19 +512,20 @@ h2 {
         background-color: #fff;
         color: black;
 
+
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 25px;
+
         }
     }
 
     &-back {
-        // background-color: rgba(162, 17, 16, 0.9);
         color: $text-color;
         transform: rotateY(180deg);
-        // padding: 20px;
         box-sizing: border-box;
 
         img {
@@ -618,7 +624,7 @@ h2 {
 .horizontal-scroll-section {
     width: 100%;
     height: auto;
-    background-image: linear-gradient(to right, $primary-color 0%, black 100%);
+    background-image: radial-gradient(circle at center center, #a21110 5%, rgb(8, 8, 8));
 
 }
 
@@ -730,14 +736,17 @@ h2 {
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
         .text_flip_card {
             position: absolute;
             color: $text-color;
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             bottom: 0;
-            margin: 2vw;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 0% 0% 25px 25px;
+            width: 100%;
+            text-align: start;
+            padding: 1rem;
         }
     }
 

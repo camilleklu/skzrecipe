@@ -21,110 +21,87 @@
 
 <body>
 
-
-
     <header>
-        <div id="desktopNav" class="desktop-nav">
-            <a href="skz.html">Par Stray Kids</a>
-            <a href="a_ne_pas_repro.html">Ne pas reproduire</a>
-            <a href="index.html">
+        <div id="desktopNav" class="desktop-nav" role="navigation" aria-label="Navigation principale">
+            <a href="skz.html" aria-label="Voir les recettes de Stray Kids">Par Stray Kids</a>
+            <a href="a_ne_pas_repro.html" aria-label="Recettes à ne pas reproduire">Ne pas reproduire</a>
+            <a href="index.html" aria-label="Accueil">
                 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/eecb36c0-f23f-4d9e-8467-b18fab15ba0a/dhr6uj1-99a81058-b479-4b30-a7ff-f599368ebac0.png/v1/fill/w_1600,h_960/stray_kids___ate_logo_in_png_by_moonlightld_dhr6uj1-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZWVjYjM2YzAtZjIzZi00ZDllLTg0NjctYjE4ZmFiMTViYTBhXC9kaHI2dWoxLTk5YTgxMDU4LWI0NzktNGIzMC1hN2ZmLWY1OTkzNjhlYmFjMC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.a6Zifa8RVXKdz5KwQW_kWUmyTYmj6XFRoNOq2wDMf54"
                     alt="logo du site" />
             </a>
-            <a href="par_les_fans.html">Par les fans</a>
-            <a href="contact.html">Contact</a>
+            <a href="par_les_fans.html" aria-label="Recettes créées par les fans">Par les fans</a>
+            <a href="contact.html" aria-label="Page de contact">Contact</a>
         </div>
 
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="index.html">Accueil</a>
-            <a href="skz.html">Par Stray Kids</a>
-            <a href="a_ne_pas_repro.html">Ne pas reproduire</a>
-            <a href="par_les_fans.html">Recettes par les fans</a>
-            <a href="contact.html">Contact</a>
+        <div id="mySidenav" class="sidenav" role="navigation" aria-label="Navigation secondaire">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fermer le menu">&times;</a>
+            <a href="index.html" aria-label="Retour à l'accueil">Accueil</a>
+            <a href="skz.html" aria-label="Voir les recettes de Stray Kids">Par Stray Kids</a>
+            <a href="a_ne_pas_repro.html" aria-label="Recettes à ne pas reproduire">Ne pas reproduire</a>
+            <a href="par_les_fans.html" aria-label="Recettes des fans">Recettes par les fans</a>
+            <a href="contact.html" aria-label="Page de contact">Contact</a>
         </div>
-        <span onclick="openNav()"><i class='bx bx-menu'></i></span>
-
+        <span onclick="openNav()" aria-label="Ouvrir le menu"><i class='bx bx-menu'></i></span>
 
         <div class="head">
             <div class="head-title">
                 <h1>Stray Kids Recipe</h1>
                 <span class="split-bar"></span>
                 <p>Le regroupement des recettes de StrayKids et de leurs fans</p>
-
             </div>
         </div>
     </header>
 
-    <div class="skzoo">
-        <img src="./images/skzoo-chan.png" alt="Chan">
-        <img src="./images/skzoo-leeknow.png" alt="Lee Know">
-        <img src="./images/skzoo-changbin.png" alt="Changbin">
-        <img src="./images/skzoo-hyunjin.png" alt="Hyunjin">
-        <img src="./images/skzoo-han.png" alt="Han">
-        <img src="./images/skzoo-felix.png" alt="Félix">
-        <img src="./images/skzoo-seungmin.png" alt="Seungmin">
-        <img src="./images/skzoo-in.png" alt="I.N">
-
+    <div class="skzoo" role="region" aria-labelledby="skzoo">
+        <img src="./images/skzoo-chan.png" alt="Chan" aria-label="Chan">
+        <img src="./images/skzoo-leeknow.png" alt="Lee Know" aria-label="Lee Know">
+        <img src="./images/skzoo-changbin.png" alt="Changbin" aria-label="Changbin">
+        <img src="./images/skzoo-hyunjin.png" alt="Hyunjin" aria-label="Hyunjin">
+        <img src="./images/skzoo-han.png" alt="Han" aria-label="Han">
+        <img src="./images/skzoo-felix.png" alt="Félix" aria-label="Félix">
+        <img src="./images/skzoo-seungmin.png" alt="Seungmin" aria-label="Seungmin">
+        <img src="./images/skzoo-in.png" alt="I.N" aria-label="I.N">
     </div>
 
-
-    <div class="container">
+    <div class="container" role="main">
         <h2>Recettes de Stray Kids</h2>
 
-        <div class="swiper-container">
+        <div class="swiper-container" aria-label="Carousel des recettes de Stray Kids">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="boeufWellington">
                     <div class="card-home">
-                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington" aria-label="Boeuf Wellington">
                         <div class="text-card-home">
-                            <h3>Boeuf Wellington</h3>
+                            <h3 id="boeufWellington">Boeuf Wellington</h3>
                             <p>de Leeknow</p>
-                            <a href="./recettes/recette-1.html">Voir la recette</a>
+                            <a href="./recettes/recette-1.html" aria-label="Voir la recette de Boeuf Wellington">Voir la
+                                recette</a>
                         </div>
                     </div>
-                    <!-- <div class="flip-card-back">
-                                <h3>Recette de Leeknow</h3>
-                                <p>Boeuf Wellington</p>
-                                <a href="#" class="button">Lire plus</a>
-                            </div> -->
                 </div>
 
-                <!-- Carte 2 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="curryBangchan">
                     <div class="card-home">
-                        <img src="./images/curry_coreen.jpg" alt="curry de la mère de Bangchan">
+                        <img src="./images/curry_coreen.jpg" alt="curry de la mère de Bangchan"
+                            aria-label="Curry de la mère de Bangchan">
                         <div class="text-card-home">
-                            <h3>La recette de curry de la mère de Bangchan</h3>
+                            <h3 id="curryBangchan">La recette de curry de la mère de Bangchan</h3>
                             <p>de Bangchan</p>
-                            <a href="./recettes/recette-2.html">Voir la recette</a>
+                            <a href="./recettes/recette-2.html"
+                                aria-label="Voir la recette du curry de la mère de Bangchan">Voir la recette</a>
                         </div>
                     </div>
-                    <!-- <div class="flip-card-back">
-                                <h3>Recette de Leeknow</h3>
-                                <p>Boeuf Wellington</p>
-                                <a href="#" class="button">Lire plus</a>
-                            </div> -->
                 </div>
 
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="coteletteAgneau">
                     <div class="card-home">
-                        <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="côtelette d'agneau">
+                        <img src="./images/Cotelettes-d-agneau-grillees-au-romarin.jpg" alt="côtelette d'agneau"
+                            aria-label="Côtelette d'agneau">
                         <div class="text-card-home">
-                            <h3>La recette de côtelette d'agneau du père de Bangchan</h3>
+                            <h3 id="coteletteAgneau">La recette de côtelette d'agneau du père de Bangchan</h3>
                             <p>de Bangchan</p>
-                            <a href="recettes/recette-3.html">Voir la recette</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="card-home">
-                        <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
-                        <div class="text-card-home">
-                            <h3>Boeuf Wellington</h3>
-                            <p>de Leeknow</p>
-                            <a href="#">Voir la recette</a>
+                            <a href="recettes/recette-3.html" aria-label="Voir la recette de côtelette d'agneau">Voir la
+                                recette</a>
                         </div>
                     </div>
                 </div>
@@ -134,39 +111,41 @@
 
         </div>
 
-
-
         <h2>Recettes ratées de Stray Kids</h2>
 
-        <div class="swiper-container two">
+        <div class="swiper-container two" aria-label="Carousel des recettes ratées de Stray Kids">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="mixtureProtein">
                     <div class="card-home">
-                        <img src="./images/milkshake-seungmin.jpg" alt="mixer bizarre de Seungmin">
+                        <img src="./images/milkshake-seungmin.jpg" alt="mixer bizarre de Seungmin"
+                            aria-label="Mixture protéiné">
                         <div class="text-card-home">
-                            <h3>Mixture protéiné</h3>
+                            <h3 id="mixtureProtein">Mixture protéiné</h3>
                             <p>de Seungmin</p>
-                            <a href="./recettes/recette-4.html">Voir la recette</a>
+                            <a href="./recettes/recette-4.html" aria-label="Voir la recette de mixture protéiné">Voir la
+                                recette</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="bungeoppang">
                     <div class="card-home">
-                        <img src="./images/bungeoppang.png" alt="bungeoppang">
+                        <img src="./images/bungeoppang.png" alt="bungeoppang" aria-label="Bungeoppang">
                         <div class="text-card-home">
-                            <h3>Bungeoppang</h3>
+                            <h3 id="bungeoppang">Bungeoppang</h3>
                             <p>de Seungmin et Félix</p>
-                            <a href="./recettes/recette-5.html">Voir la recette</a>
+                            <a href="./recettes/recette-5.html" aria-label="Voir la recette de Bungeoppang">Voir la
+                                recette</a>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide" role="article" aria-labelledby="milkshakeFraise">
                     <div class="card-home">
-                        <img src="./images/smoothie.png" alt="Milkshake à la fraise">
+                        <img src="./images/smoothie.png" alt="Milkshake à la fraise" aria-label="Milkshake à la fraise">
                         <div class="text-card-home">
-                            <h3>Milkshake à la fraise</h3>
+                            <h3 id="milkshakeFraise">Milkshake à la fraise</h3>
                             <p>de Seungmin et Félix</p>
-                            <a href="./recettes/recette-6.html">Voir la recette</a>
+                            <a href="./recettes/recette-6.html"
+                                aria-label="Voir la recette de milkshake à la fraise">Voir la recette</a>
                         </div>
                     </div>
                 </div>
@@ -174,40 +153,37 @@
 
             <div class="swiper-pagination"></div>
 
-
-
-
             <h2>Recettes des Fans</h2>
 
-            <div class="swiper-container">
+            <div class="swiper-container" aria-label="Carousel des recettes des fans">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" role="article" aria-labelledby="boeufFan">
                         <div class="card-home">
-                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington" aria-label="Boeuf Wellington">
                             <div class="text-card-home">
-                                <h3>Boeuf Wellington</h3>
+                                <h3 id="boeufFan">Boeuf Wellington</h3>
                                 <p>de Leeknow</p>
-                                <a href="#">Voir la recette</a>
+                                <a href="#" aria-label="Voir la recette des fans">Voir la recette</a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" role="article" aria-labelledby="boeufFan2">
                         <div class="card-home">
-                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington" aria-label="Boeuf Wellington">
                             <div class="text-card-home">
-                                <h3>Boeuf Wellington</h3>
+                                <h3 id="boeufFan2">Boeuf Wellington</h3>
                                 <p>de Leeknow</p>
-                                <a href="#">Voir la recette</a>
+                                <a href="#" aria-label="Voir la recette des fans">Voir la recette</a>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" role="article" aria-labelledby="boeufFan3">
                         <div class="card-home">
-                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington">
+                            <img src="./images/boeuf_leeknow.png" alt="boeuf Wellington" aria-label="Boeuf Wellington">
                             <div class="text-card-home">
-                                <h3>Boeuf Wellington</h3>
+                                <h3 id="boeufFan3">Boeuf Wellington</h3>
                                 <p>de Leeknow</p>
-                                <a href="#">Voir la recette</a>
+                                <a href="#" aria-label="Voir la recette des fans">Voir la recette</a>
                             </div>
                         </div>
                     </div>
@@ -219,19 +195,17 @@
         </div>
     </div>
 
-
-
     <footer>
         <hr class="separation">
-        <div class="footer-contact">
+        <div class="footer-contact" role="contentinfo">
             <div class="social-media">
-                <a href=""><i class="bx bxl-instagram"></i>Instagram</a>
-                <a href=""><i class="bx bxl-pinterest"></i>Pinterest</a>
-                <a href=""><i class="bx bxl-pinterest"></i>Pinterest</a>
+                <a href="" aria-label="Instagram"><i class="bx bxl-instagram"></i>Instagram</a>
+                <a href="" aria-label="Pinterest"><i class="bx bxl-pinterest"></i>Pinterest</a>
+                <a href="" aria-label="Pinterest"><i class="bx bxl-pinterest"></i>Pinterest</a>
             </div>
             <div class="phone">
                 <p><i class="bx bx-phone"></i> +33 0 00 00 00 00</p>
-                <a href="mailto:info@straykids.com">skz@repice.com</a>
+                <a href="mailto:info@straykids.com" aria-label="Envoyer un e-mail">skz@repice.com</a>
             </div>
         </div>
         <div class="copyright">

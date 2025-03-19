@@ -402,9 +402,13 @@ h2 {
 .flip-card-inner .text_flip_card {
   position: absolute;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   bottom: 0;
-  margin: 2vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0% 0% 25px 25px;
+  width: 100%;
+  text-align: start;
+  padding: 1rem;
 }
 .flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
@@ -510,7 +514,7 @@ h2 {
 .horizontal-scroll-section {
   width: 100%;
   height: auto;
-  background-image: linear-gradient(to right, #A21110 0%, black 100%);
+  background-image: radial-gradient(circle at center center, #a21110 5%, rgb(8, 8, 8));
 }
 
 .horizontal-scroll-container {
@@ -574,11 +578,129 @@ h2 {
   .recipe-title .recipe-time {
     width: 100%;
   }
-  .instructions li,
-  .ingredients li {
-    margin: 3vw;
+}
+.flip-card-une {
+  background-color: transparent;
+  width: 40%;
+  margin: 0 auto;
+  perspective: 1000px;
+  overflow: hidden;
+  padding-bottom: 1.5vw;
+  padding-top: 1.5vw;
+}
+.flip-card-une-inner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card-une-inner .text_flip_card {
+  position: absolute;
+  color: white;
+  font-size: 1.9rem;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0% 0% 25px 25px;
+  width: 100%;
+  text-align: start;
+  padding: 1rem;
+}
+.flip-card-une.flipped .flip-card-une-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-une-front, .flip-card-une-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+}
+.flip-card-une-front {
+  background-color: #fff;
+  color: black;
+}
+.flip-card-une-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.flip-card-une-back {
+  color: white;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+}
+.flip-card-une-back img {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  position: relative;
+}
+.flip-card-une-back .text_dessus {
+  background-color: rgba(162, 17, 16, 0.7);
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  top: 0;
+  display: flex;
+  padding: 2vw;
+}
+.flip-card-une-back h3 {
+  position: absolute;
+  top: 0;
+  margin: 4vw 0vw;
+  width: 100%;
+  z-index: 2;
+  font-size: 2rem;
+  font-family: "Arbutus Slab";
+  text-align: center;
+}
+.flip-card-une-back p {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  margin-top: 6vw;
+  text-align: center;
+  width: 80%;
+  margin: 10vw 3vw 0vw 3vw;
+  font-size: 1.2rem;
+}
+.flip-card-une-back .button {
+  top: 0;
+  background-color: #fff;
+  color: white;
+  color: #A21110;
+  text-decoration: none;
+  border-radius: 25px;
+  z-index: 2;
+  padding: 0.5vw 1vw;
+  position: absolute;
+  font-size: 1.2rem;
+  margin-left: -14.5vw;
+  margin-top: 20vw;
+}
+@media (min-width: 870px) {
+  .flip-card-une .flip-card {
+    width: 70%;
+    height: 100%;
+  }
+  .flip-card-une .flip-card-inner {
+    width: 100%;
+    height: 100%;
   }
 }
+
+.instructions li,
+.ingredients li {
+  margin: 3vw;
+}
+
 .recipe-time {
   display: flex;
   flex-direction: row;
@@ -715,118 +837,6 @@ label {
 @media (max-width: 870px) {
   form {
     padding-top: 15vw;
-  }
-}
-.flip-card-une {
-  background-color: transparent;
-  width: 40%;
-  margin: 0 auto;
-  perspective: 1000px;
-  overflow: hidden;
-  padding-bottom: 1.5vw;
-  padding-top: 1.5vw;
-}
-.flip-card-une-inner {
-  position: relative;
-  width: 100%;
-  height: 500px;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-.flip-card-une-inner .text_flip_card {
-  position: absolute;
-  color: white;
-  font-size: 1.8rem;
-  bottom: 0;
-  margin: 2vw;
-}
-.flip-card-une.flipped .flip-card-une-inner {
-  transform: rotateY(180deg);
-}
-.flip-card-une-front, .flip-card-une-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 25px;
-}
-.flip-card-une-front {
-  background-color: #fff;
-  color: black;
-}
-.flip-card-une-front img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
-}
-.flip-card-une-back {
-  color: white;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-}
-.flip-card-une-back img {
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
-  position: relative;
-}
-.flip-card-une-back .text_dessus {
-  background-color: rgba(162, 17, 16, 0.7);
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  border-radius: 25px;
-  top: 0;
-  display: flex;
-  padding: 2vw;
-}
-.flip-card-une-back h3 {
-  position: absolute;
-  top: 0;
-  margin: 4vw 0vw;
-  width: 100%;
-  z-index: 2;
-  font-size: 2rem;
-  font-family: "Arbutus Slab";
-  text-align: center;
-}
-.flip-card-une-back p {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  margin-top: 6vw;
-  text-align: center;
-  width: 80%;
-  margin: 10vw 3vw 0vw 3vw;
-  font-size: 1.2rem;
-}
-.flip-card-une-back .button {
-  top: 0;
-  background-color: #fff;
-  color: white;
-  color: #A21110;
-  text-decoration: none;
-  border-radius: 25px;
-  z-index: 2;
-  padding: 0.5vw 1vw;
-  position: absolute;
-  font-size: 1.2rem;
-  margin-left: -14.5vw;
-  margin-top: 20vw;
-}
-@media (min-width: 870px) {
-  .flip-card-une .flip-card {
-    width: 70%;
-    height: 100%;
-  }
-  .flip-card-une .flip-card-inner {
-    width: 100%;
-    height: 100%;
   }
 }
 

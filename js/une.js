@@ -45,8 +45,8 @@ cards.forEach((card) => {
     {
       x: 0,
       opacity: 1,
-      duration: 4,
-      delay: 2,
+      duration: 2,
+      delay: 1,
       ease: "bounce",
       scrollTrigger: {
         trigger: card,
