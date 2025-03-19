@@ -73,6 +73,8 @@ elem.forEach((element) => {
     }
   );
 });
+
+// Pour les animations des skzoo
 document.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -81,10 +83,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   icons.forEach((icon, index) => {
     let direction = index % 2 === 0 ? 1 : -1; // Alterne gauche/droite
-    let startY = index * 300; // Espacement vertical initial plus grand
-    let delay = index * 0.2; // Décalage temporel
-    let slalomWidth = gsap.utils.random(300, 500); // Largeur du slalom augmentée
-    let travelY = gsap.utils.random(1000, 1500); // Distance verticale augmentée
+    let startY = index * 200; // Espacement vertical initial plus grand
+    let delay = index * 0.4; // Décalage temporel
+    let slalomWidth = gsap.utils.random(300, 350); // Largeur du slalom augmentée
+    let travelY = gsap.utils.random(500, 1500); // Distance verticale augmentée
 
     // Position initiale des images
     gsap.set(icon, { y: startY });
@@ -93,15 +95,40 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.to(icon, {
       x: direction * slalomWidth, // Variation de l'amplitude du slalom
       y: `+=${travelY}`, // Variation de la distance verticale
-      rotation: direction * gsap.utils.random(10, 20), // Rotation aléatoire
+      rotation: direction * gsap.utils.random(5, 10), // Rotation aléatoire
       ease: "power1.inOut",
       delay: delay, // Décalage entre chaque animation
       scrollTrigger: {
         trigger: icon,
-        start: "top 80%", // Ajustez ce point de départ pour une meilleure visibilité
-        end: "bottom -20%",
+        start: "top 40%", // Ajustez ce point de départ pour une meilleure visibilité
+        end: "bottom -30%",
         scrub: true,
       },
     });
+  });
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  let images = document.querySelectorAll(".skzoo-recipe img");
+
+  images.forEach((img, index) => {
+    gsap.fromTo(
+      img,
+      {
+        x: "-100%", // Départ hors de l'écran à gauche
+        opacity: 0,
+      },
+      {
+        x: "100vw", // Traverse tout l'écran vers la droite
+        opacity: 1,
+        duration: 5, // Durée totale de l'animation
+        delay: index * 0.7, // Décalage progressif entre les images
+        ease: "power1.out",
+        repeat: -1, // Répétition infinie
+        yoyo: false, // Pas de retour en arrière
+      }
+    );
   });
 });
